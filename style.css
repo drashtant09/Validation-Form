@@ -49,15 +49,24 @@ body {
 
 .form {
     padding: 40px;
+}
+
+.form-control {
     margin-bottom: 20px;
     position: relative;
+
 }
 
 .form-control label {
+    display: inline;
+    margin-bottom: 5px;
+}
+
+.form-control input {
     width: 100%;
     border: 2px solid #f0f0f0;
     border-radius: 5px;
-    display: block;
+    display: 5px;
     font-family: var(--myfont);
     font-size: 14px;
     padding: 12px;
@@ -84,9 +93,27 @@ body {
     visibility: hidden;
 }
 
+.form-control.success i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+    color: #e74c3c;
+    visibility: visible;
+}
+
 .form-control small {
+    color: #e74c3c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
     visibility: hidden;
 }
+.form-control.error small {
+    visibility: hidden;
+}
+
 
 .form .btn {
     background: var(--lg-color);
