@@ -58,7 +58,7 @@ body {
 }
 
 .form-control label {
-    display: inline;
+    display: inline-block;
     margin-bottom: 5px;
 }
 
@@ -72,7 +72,7 @@ body {
     padding: 12px;
 }
 
-.form-control input focus {
+.form-control input:focus {
     outline: 0;
     border-color: #777;
 
@@ -106,11 +106,12 @@ body {
 .form-control small {
     color: #e74c3c;
     position: absolute;
+    bottom: -25px;
     left: 0;
     visibility: hidden;
 }
 .form-control.error small {
-    visibility: hidden;
+    visibility: visible;
 }
 
 
