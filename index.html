@@ -55,7 +55,10 @@
     <input type="submit" value="Submit" class="btn" name="">
  </form>
 </div>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
  
+
 <script type="text/javascript">
 
     const form = document.getElementById('form');
@@ -74,7 +77,7 @@
 
     const sendData = (usernameVal, sRate, count) => {
         if (sRate === count) {
-            alert('registration successfull ');
+            alert('registration successfull');
             swal("Welcome! " + usernameVal, "Registration Successfull", "success");
             location.href = `demo.html?username=${usernameVal}`
         }
@@ -88,7 +91,7 @@
         for (var i = 0; i < formCon.length; i++) {
             if (formCon[i].className === "form-control success") {
                 var sRate = 0 + i;
-               // console.log(sRate);
+                // console.log(sRate);
                 sendData(usernameVal, sRate, count);
             }else {
                 return false;

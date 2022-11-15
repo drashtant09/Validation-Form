@@ -134,7 +134,7 @@ body {
 }
 
 .form .btn:hover {
-    background: linear-gradient(to right, #b53b3b, #d59b43 );
+    background: linear-gradient(to right,#b53b3b, #d59b43 );
 }
 
 @media(max-width:998px) {
