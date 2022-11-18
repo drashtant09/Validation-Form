@@ -78,7 +78,7 @@
     const sendData = (usernameVal, sRate, count) => {
         if (sRate === count) {
             alert('registration successfull');
-            swal("Welcome! " + usernameVal, "Registration Successfull", "success");
+            swal("Welcome! " + `${usernameVal}`, "Registration Successfull" , "success");
             location.href = `demo.html?username=${usernameVal}`
         }
     }
